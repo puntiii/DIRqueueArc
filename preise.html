@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-de="Preise & Kauf – queueArc" data-en="Pricing & Purchase – queueArc">Preise & Kauf – queueArc</title>
+  <meta name="description" content="queueArc kaufen: Einmalzahlung für Windows, Mac und Linux – Updates und Support inklusive (Prototyp)." data-de="queueArc kaufen: Einmalzahlung für Windows, Mac und Linux – Updates und Support inklusive (Prototyp)." data-en="Buy queueArc: one-time payment for Windows, Mac and Linux – updates and support included (prototype)." data-attr="content">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" data-logo data-de="queueArc – Startseite" data-en="queueArc – Home page" data-attr="aria-label" aria-label="queueArc – Startseite">
+        <img src="assets/img/logo-platzhalter.svg" alt="" width="40" height="40">
+        <span class="wordmark">queueArc</span>
+      </a>
+      <nav class="main-nav" data-de="Hauptnavigation" data-en="Main navigation" data-attr="aria-label" aria-label="Hauptnavigation">
+        <ul>
+        <li><a href="index.html"><span class="de">Start</span><span class="en">Home</span></a></li>
+        <li><a href="funktionen.html"><span class="de">Funktionen</span><span class="en">Features</span></a></li>
+        <li><a href="preise.html" aria-current="page"><span class="de">Preise &amp; Kauf</span><span class="en">Pricing &amp; Purchase</span></a></li>
+        <li><a href="kontakt.html"><span class="de">Kontakt</span><span class="en">Contact</span></a></li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <div class="lang-switch" role="group" data-de="Sprache wählen" data-en="Choose language" data-attr="aria-label" aria-label="Sprache wählen">
+          <button type="button" data-lang="de" lang="de" aria-pressed="true" aria-label="Deutsch">DE</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+        </div>
+        <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="icon-on" d="M16.5 8.5a5 5 0 0 1 0 7"/><path class="icon-off" d="M17 9l5 6M22 9l-5 6"/></svg>
+          <span class="de">Sound</span><span class="en">Sound</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container">
+      <h1><span class="de">Preise &amp; Kauf</span><span class="en">Pricing &amp; Purchase</span></h1>
+      <div class="notice"><p class="de">Prototyp: Es findet keine echte Zahlung statt und es wird keine echte Datei geliefert. Der Preis ist ein Platzhalter.</p>
+<p class="en">Prototype: no real payment takes place and no real file is delivered. The price is a placeholder.</p></div>
+      <section class="price-card" aria-labelledby="h-lic">
+        <h2 id="h-lic" style="margin-top:0">queueArc <span class="de">Lizenz</span><span class="en">License</span></h2>
+        <p class="price">49 &euro;</p>
+        <p class="de">Einmalzahlung, inkl. USt. Platzhalterpreis.</p>
+<p class="en">One-time payment, VAT included. Placeholder price.</p>
+        <ul>
+          <li class="de">Updates und Support inklusive</li><li class="en">Updates and support included</li>
+          <li class="de">Windows, Mac und Linux</li><li class="en">Windows, Mac and Linux</li>
+          <li class="de">Kein Abo, keine Anmeldung</li><li class="en">No subscription, no sign-up</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-buy">
+        <h2 id="h-buy"><span class="de">Jetzt kaufen</span><span class="en">Buy now</span></h2>
+        <form id="buy-form" novalidate>
+          <fieldset>
+            <legend><span class="de">Betriebssystem wählen</span><span class="en">Choose operating system</span></legend>
+            <div class="option"><input type="radio" id="os-win" name="os" value="windows" checked><label for="os-win">Windows</label></div>
+            <div class="option"><input type="radio" id="os-mac" name="os" value="mac"><label for="os-mac">macOS</label></div>
+            <div class="option"><input type="radio" id="os-lin" name="os" value="linux"><label for="os-lin">Linux</label></div>
+          </fieldset>
+          <p class="de"><a href="eula.html">EULA</a> gilt für die Nutzung der Software. AGB und Widerrufsbelehrung folgen in einer späteren Version.</p>
+          <p class="en">The <a href="eula.html">EULA</a> applies to the use of the software. Terms and conditions and the right of withdrawal will follow in a later version.</p>
+          <button type="submit" class="btn"><span class="de">Kaufen (Prototyp, 49 €)</span><span class="en">Buy (prototype, €49)</span></button>
+        </form>
+        <div id="purchase-success" class="success" tabindex="-1" role="status" hidden>
+          <h2><span class="de">Vielen Dank für Ihren (Test-)Kauf!</span><span class="en">Thank you for your (test) purchase!</span></h2>
+          <p class="de">Ihre Datei für <strong id="dl-os"></strong> wäre jetzt bereit: <code id="dl-file"></code>. In diesem Prototyp gibt es keinen echten Download.</p>
+          <p class="en">Your file for the selected system would now be ready. In this prototype there is no real download.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav data-de="Rechtliches und Service" data-en="Legal and service" data-attr="aria-label" aria-label="Rechtliches und Service">
+        <ul class="footer-links">
+      <li><a href="impressum.html"><span class="de">Impressum</span><span class="en">Legal notice</span></a></li>
+      <li><a href="documents/datenschutz-de.pdf" target="_blank" rel="noopener" data-de="documents/datenschutz-de.pdf" data-en="documents/datenschutz-en.pdf" data-attr="href"><span class="de">Datenschutz</span><span class="en">Privacy policy</span> <span class="de">(PDF, neuer Tab)</span><span class="en">(PDF, new tab)</span></a></li>
+      <li><a href="documents/barrierefreiheit-de.pdf" target="_blank" rel="noopener" data-de="documents/barrierefreiheit-de.pdf" data-en="documents/barrierefreiheit-en.pdf" data-attr="href"><span class="de">Barrierefreiheit</span><span class="en">Accessibility</span> <span class="de">(PDF, neuer Tab)</span><span class="en">(PDF, new tab)</span></a></li>
+      <li><a href="eula.html"><span class="de">EULA</span><span class="en">EULA</span></a></li>
+      <li><a href="credits.html"><span class="de">Credits &amp; Bildnachweise</span><span class="en">Credits &amp; image sources</span></a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 queueArc AG &middot; <span class="de">Fiktives Unternehmen &ndash; Übungsprojekt, kein echtes Angebot.</span><span class="en">Fictional company &ndash; practice project, not a real offer.</span></p>
+      <p><span class="de">„QR Code“ ist eine eingetragene Marke der DENSO WAVE INCORPORATED.</span><span class="en">“QR Code” is a registered trademark of DENSO WAVE INCORPORATED.</span></p>
+    </div>
+  </footer>
+</body>
+</html>
